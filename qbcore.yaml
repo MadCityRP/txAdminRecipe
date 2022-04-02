@@ -470,7 +470,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-core
     ref: main
-    src: https://github.com/qbcore-framework/qb-core
+    src: https://github.com/MadCityRP/qb-core
   # Clean up
   - action: remove_path
     path: ./tmp
