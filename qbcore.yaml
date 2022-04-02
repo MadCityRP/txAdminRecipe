@@ -8,7 +8,7 @@ description: An advanced FiveM RP framework including jobs, gangs, housing & mor
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbcore-framework/txAdminRecipe
+    src: https://github.com/MadCityRP/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
 
@@ -131,10 +131,6 @@ tasks:
     src: https://github.com/qbcore-framework/prison_map
     
   # Downloading QBCore resources
-  - action: download_github
-    dest: ./resources/[qb]/qb-core
-    ref: main
-    src: https://github.com/qbcore-framework/qb-core
 
   - action: download_github
     dest: ./resources/[qb]/qb-scoreboard
@@ -470,6 +466,11 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/qb-loading
 
+  # Modified Scripts
+  - action: download_github
+    dest: ./resources/[qb]/qb-core
+    ref: main
+    src: https://github.com/qbcore-framework/qb-core
   # Clean up
   - action: remove_path
     path: ./tmp
